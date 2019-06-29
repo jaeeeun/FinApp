@@ -16,7 +16,7 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:background="#EAEAEA"
+            android:background="@color/white"
             app:popupTheme="@style/PopupOverlay"
             app:titleTextColor="#de000000" />
 
@@ -30,7 +30,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
         android:layout_margin="@dimen/fab_margin"
-        android:backgroundTint="#2287F6"
+        android:backgroundTint="@color/deep_sky_blue"
         app:rippleColor="#FFFFFF"
         app:srcCompat="@drawable/add_white" />
 
