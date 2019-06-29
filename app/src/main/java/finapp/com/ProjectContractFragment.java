@@ -31,8 +31,6 @@ public class ProjectContractFragment extends Fragment {
 
     Button project_contract_button;
 
-
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
