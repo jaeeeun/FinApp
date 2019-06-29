@@ -93,7 +93,7 @@ public class Project1Fragment extends Fragment{
                     calendar3.add(Calendar.DAY_OF_MONTH, day1-30);
                     events.add(new EventDay(calendar3, R.drawable.event_blue_meeting));
                     calendar4.add(Calendar.DAY_OF_MONTH, day2-30);
-                    events.add(new EventDay(calendar4, R.drawable.event_blue_motion));
+                    events.add(new EventDay(calendar4, R.drawable.event_blue_styleframe));
                     calendar5.add(Calendar.DAY_OF_MONTH, day3-30);
                     events.add(new EventDay(calendar5, R.drawable.event_blue_money));
 
