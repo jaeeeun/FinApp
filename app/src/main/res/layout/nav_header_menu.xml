@@ -37,7 +37,7 @@
 
     <View
         android:layout_width="fill_parent"
-        android:layout_height="1px"
+        android:layout_height="2px"
         android:background="@color/dark_grey" />
 
 
@@ -48,10 +48,7 @@
         android:layout_weight="1"
         android:marginTop="21dp" />
 
-    <View
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_weight="1" />
+
 
     <ImageView
         android:layout_width="286dp"
