@@ -32,6 +32,7 @@ public class LoginActivity extends AppCompatActivity {
         mAuth=FirebaseAuth.getInstance();
 
 
+
         btn_signUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

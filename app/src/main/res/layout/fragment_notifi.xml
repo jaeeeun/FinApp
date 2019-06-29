@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".NotifiFragment"
+    android:background="@color/white"
     android:id="@+id/notifi_container">
 
     <!-- TODO: Update blank fragment layout -->

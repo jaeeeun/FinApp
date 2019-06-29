@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -64,6 +65,19 @@ public class MenuActivity extends AppCompatActivity
       View headView = navigationView.getHeaderView(0);
       TextView textView=headView.findViewById(R.id.textView);
       textView.setText("308302-04048106");
+      ImageButton setting_button=headView.findViewById(R.id.btn_setting);
+      ImageButton notify_button=headView.findViewById(R.id.btn_notify);
+
+      notify_button.setOnClickListener(new View.OnClickListener() {
+          @Override
+          public void onClick(View view) {
+              Fragment fragment1 = new NotifiFragment();
+              FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+              transaction.add(R.id.container, fragment1);
+              transaction.addToBackStack(null);
+              transaction.commit();
+          }
+      });
 
       //ImageButton imageButton=(ImageButton)findViewById(R.id.imageButton);
       //TextView textView=(TextView)findViewById(R.id.textView);
