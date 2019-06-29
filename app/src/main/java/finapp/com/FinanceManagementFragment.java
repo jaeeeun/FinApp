@@ -34,7 +34,7 @@ public class FinanceManagementFragment extends Fragment {
         Button bt_raisecredit = (Button) view.findViewById(R.id.bt_raisecredit);
         Button bt_loan = (Button) view.findViewById(R.id.bt_loan);
 
-        /*
+
         bt_incomemanagement.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 FragmentTransaction fragmentTransaction=getFragmentManager().beginTransaction();
@@ -60,7 +60,7 @@ public class FinanceManagementFragment extends Fragment {
                 getFragmentManager().beginTransaction().replace(R.id.frame, new Fragment4()).commit();
             }
         });
-*/
+
         return view;
 
     }

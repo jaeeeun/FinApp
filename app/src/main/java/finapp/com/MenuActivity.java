@@ -106,13 +106,16 @@ public class MenuActivity extends AppCompatActivity
             transaction.commit();
             // Handle the camera action
         } else if (id == R.id.nav_gallery) {
-            Toast.makeText(getApplicationContext(), "Asdfasdf", Toast.LENGTH_SHORT).show();
-            Fragment fragment1;
-            fragment1=new ProjectFragment();
-            transaction.replace(R.id.container,fragment1);
+            Fragment fragment2;
+            fragment2 = new FinanceManagementFragment();
+            transaction.replace(R.id.container, fragment2);
             transaction.commit();
-        }
-
+        } /* else if(id==R.id.nav_slideshow){
+            Fragment fragment3;
+            fragment3 = new ReceiptAdd1Fragment();
+            transaction.replace(R.id.container, fragment3);
+            transaction.commit();
+        } */
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;

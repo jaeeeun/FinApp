@@ -46,7 +46,7 @@
         android:layout_width="336dp"
         android:layout_height="114dp"
         android:layout_weight="1"
-        android:marginTop="21dp" />
+         />
 
 
 
