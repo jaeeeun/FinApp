@@ -39,16 +39,6 @@ public class MenuActivity extends AppCompatActivity
         transaction.commit();
 
 
-        //플로팅 버튼
-    //    FloatingActionButton fab = findViewById(R.id.fab);
-    //    fab.setOnClickListener(new View.OnClickListener() {
-    //        @Override
-    //        public void onClick(View view) {
-    //            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-    //                    .setAction("Action", null).show();
-    //        }
-    //    });
-
         //네비게이션바
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
             NavigationView navigationView = findViewById(R.id.nav_view);
@@ -69,6 +59,7 @@ public class MenuActivity extends AppCompatActivity
         tv_kb2.setText("112202-01-012132");
         tv_kbaccount.setText("잔액");
         tv_money.setText("2,430,028원");
+
 
         ImageButton imageButton=headView.findViewById(R.id.btn_setting);
         imageButton.setOnClickListener(new View.OnClickListener() {
