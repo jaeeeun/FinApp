@@ -9,6 +9,13 @@
     android:theme="@style/Widget.Design.CollapsingToolbar">
 
     <ImageButton
+        android:id="@+id/btn_notify"
+        android:layout_width="51dp"
+        android:layout_height="40dp"
+        android:layout_gravity="right"
+        android:src="@drawable/add" />
+    <ImageButton
+        android:id="@+id/btn_setting"
         android:layout_width="51dp"
         android:layout_height="40dp"
         android:layout_gravity="right"
