@@ -13,21 +13,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light">
+
         <activity
             android:name=".TempActivity"
             android:label="@string/title_activity_temp"
             android:theme="@style/NoActionBar"></activity>
-        <activity
-            android:name=".MenuActivity"
-            android:label="@string/title_activity_menu"
-            android:theme="@style/NoActionBar" />
+        <activity android:name=".MenuActivity"
+            android:theme="@style/NoActionBar"/>
         <activity android:name=".RegisterActivity" />
+        <activity android:name=".MainActivity" />
         <activity
-            android:name=".MainActivity"
+            android:name=".LoginActivity"
             android:theme="@style/NoActionBar"
-            android:windowSoftInputMode="stateAlwaysVisible" />
-        <activity android:name=".LoginActivity"
-            android:theme="@style/NoActionBar">
+            android:windowSoftInputMode="stateAlwaysVisible">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="android.intent.action.VIEW" />

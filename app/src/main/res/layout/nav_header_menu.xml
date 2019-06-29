@@ -54,6 +54,7 @@
         android:background="@color/white" />
 
     <TextView
+        android:id="@+id/tv_kb1"
         style="@style/CaptionSelectedOnSecondaryMediumEmphasisLeft"
         android:layout_marginTop="24dp"
         android:layout_width="wrap_content"
@@ -61,6 +62,7 @@
         tools:text="KB Start 통장 저축예금" />
 
     <TextView
+        android:id="@+id/tv_kbaccount"
         android:layout_marginTop="5dp"
         style="@style/Subtitle1PrimaryLeft"
         android:layout_width="wrap_content"
@@ -68,6 +70,7 @@
         tools:text="112202-01-012132" />
 
     <TextView
+        android:id="@+id/tv_kb2"
         android:layout_marginTop="12dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -78,6 +81,7 @@
         tools:text="잔액" />
 
     <TextView
+        android:id="@+id/tv_money"
         style="@style/H6SelectedOnSurfaceHighEmphasisLeft"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

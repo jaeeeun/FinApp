@@ -28,26 +28,18 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
-import java.util.Random;
 
 import static android.content.ContentValues.TAG;
 
 
 public class ProjectFragment extends Fragment {
 
-    public ProjectFragment() {
-        // Required empty public constructor
-    }
-
-
     private FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
     private DatabaseReference myRef = firebaseDatabase.getReference();
 
-
     private String projectname;
-    private int starticon, endicon, startday, endday, startmonth, endmonth, today_start, today_end, day1, day2, day3;
+    private int startday, endday, startmonth, endmonth,day1, day2, day3;
     private int number;
-    private int projectnumber;
     String income;
     TextView tv_projectname, tv_projectday,tv_income;
 
@@ -87,11 +79,9 @@ public class ProjectFragment extends Fragment {
                 switch (i) {
                     case 0:
                         //전체
-                        projectnumber = 0;
                         //#여기고쳐야되외외오이외외욍
                         break;
                     case 1:
-                        projectnumber = 1;
                         tv_projectname.setText("모션그래픽");
                         tv_projectday.setText("6월 3일");
                         tv_income.setText("1,500,000원");
@@ -101,8 +91,7 @@ public class ProjectFragment extends Fragment {
                         transaction.commit();
                         break;
                     case 2:
-                        projectnumber = 2;
-                        tv_projectname.setText("웨딩 영상");
+                        tv_projectname.setText("웨딩영상");
                         tv_projectday.setText("6월 8일");
                         tv_income.setText("2,000,000원");
 
@@ -111,7 +100,6 @@ public class ProjectFragment extends Fragment {
                         transaction.commit();
                         break;
                     case 3:
-                        projectnumber = 3;
                         break;
                     default:
                         break;
@@ -150,10 +138,7 @@ public class ProjectFragment extends Fragment {
                     Calendar calendar4 = Calendar.getInstance();
                     Calendar calendar5 = Calendar.getInstance();
                     Calendar calendar6 = Calendar.getInstance();
-                    calendar1.set(2019, 5, 30);
-                    calendar2.set(2019, 5, 30);
-                    calendar3.set(2019, 5, 30);
-                    calendar4.set(2019, 5, 30);
+
 
                     if (number == 1) {
                         calendar1.add(Calendar.DAY_OF_MONTH, startday-30);
@@ -227,22 +212,7 @@ public class ProjectFragment extends Fragment {
             }
         });
 
-
-        //
-
-
         return view;
-    }
-
-
-
-    private Calendar getRandomCalendar() {
-        Random random = new Random();
-
-        Calendar calendar = Calendar.getInstance();
-        calendar.add(Calendar.MONTH, random.nextInt(99));
-
-        return calendar;
     }
 
 

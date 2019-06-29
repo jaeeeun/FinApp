@@ -4,6 +4,8 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageButton;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.ActionBarDrawerToggle;
@@ -14,9 +16,7 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.navigation.NavigationView;
-import com.google.android.material.snackbar.Snackbar;
 
 public class MenuActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -26,9 +26,10 @@ public class MenuActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
 
+
+
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        // toolbar.setNavigationIcon(R.drawable.ic_back);
         getSupportActionBar().setTitle("프로젝트");
 
         Fragment ProjecFragment = new ProjectFragment();
@@ -39,18 +40,18 @@ public class MenuActivity extends AppCompatActivity
 
 
         //플로팅 버튼
-        FloatingActionButton fab = findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
+    //    FloatingActionButton fab = findViewById(R.id.fab);
+    //    fab.setOnClickListener(new View.OnClickListener() {
+    //        @Override
+    //        public void onClick(View view) {
+    //            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+    //                    .setAction("Action", null).show();
+    //        }
+    //    });
 
         //네비게이션바
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
-        NavigationView navigationView = findViewById(R.id.nav_view);
+            NavigationView navigationView = findViewById(R.id.nav_view);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.addDrawerListener(toggle);
@@ -58,6 +59,47 @@ public class MenuActivity extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
 
 
+        View headView = navigationView.getHeaderView(0);
+
+        TextView tv_kb1=headView.findViewById(R.id.tv_kb1);
+        TextView tv_kb2=headView.findViewById(R.id.tv_kb2);
+        TextView tv_kbaccount=headView.findViewById(R.id.tv_kbaccount);
+        TextView tv_money=headView.findViewById(R.id.tv_money);
+        tv_kb1.setText("KB Start 통장 저축 예금");
+        tv_kb2.setText("112202-01-012132");
+        tv_kbaccount.setText("잔액");
+        tv_money.setText("2,430,028원");
+
+        ImageButton imageButton=headView.findViewById(R.id.btn_setting);
+        imageButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                DrawerLayout drawer = findViewById(R.id.drawer_layout);
+                Fragment fragment1;
+                fragment1=new NotifiFragment();
+                transaction.replace(R.id.container,fragment1);
+                transaction.commit();
+                drawer.closeDrawer(GravityCompat.START);
+            }
+        });
+
+
+        /*
+        View drawerView;
+        drawerView = (View) findViewById(R.id.drawer_layout);
+        DrawerLayout dlDrawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+
+        ImageButton btn_setting=findViewById(R.id.btn_setting);
+        btn_setting.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Fragment fragment1;
+                fragment1=new NotifiFragment();
+                transaction.replace(R.id.container,fragment1);
+                transaction.commit();
+            }
+        });
+*/
 
     }
 
@@ -122,8 +164,7 @@ public class MenuActivity extends AppCompatActivity
             transaction.replace(R.id.container, fragment3);
             transaction.commit();
         }
-        DrawerLayout drawer = findViewById(R.id.drawer_layout);
-        drawer.closeDrawer(GravityCompat.START);
+
         return true;
     }
 }
