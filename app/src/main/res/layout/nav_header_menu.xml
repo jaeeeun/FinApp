@@ -2,21 +2,17 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="404dp"
+    android:layout_height="wrap_content"
     xmlns:tools="http://schemas.android.com/tools"
     android:background="@color/white"
-    android:gravity="bottom"
     android:orientation="vertical"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingTop="40dp"
-    android:paddingBottom="@dimen/activity_vertical_margin"
     android:theme="@style/Widget.Design.CollapsingToolbar">
 
-<ImageButton
-    android:layout_gravity="right"
-    android:layout_width="24px"
-    android:layout_height="24px"
-    android:src="@drawable/setting"/>
+    <ImageButton
+        android:layout_width="51dp"
+        android:layout_height="40dp"
+        android:layout_gravity="right"
+        android:src="@drawable/setting" />
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
