@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:id="@+id/frame_add_image"
+    android:layout_height="match_parent"
+    tools:context=".ReceiptAddFragment2">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="400dp" />
+
+        <LinearLayout
+            android:id="@+id/llBottomNav"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="400dp"
+            android:background="#96000000"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/btnGallery"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Gallery" />
+
+            <Button
+                android:id="@+id/btnCamera"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Camera" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="440dp"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/tv_receiptdate"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:text="발행일자"
+                android:textSize="10sp" />
+
+            <EditText
+                android:id="@+id/tv_receiptdate2"
+                android:layout_width="254dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:hint="발행일자"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="480dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_receiptsum"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:text="금액"
+                android:textSize="10sp" />
+
+            <EditText
+                android:id="@+id/tv_receiptsum2"
+                android:layout_width="254dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:hint="금액"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="520dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_receipt_type"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:text="구분"
+                android:textSize="10sp" />
+
+            <EditText
+                android:id="@+id/tv_receipt_type2"
+                android:layout_width="254dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:hint="구분"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="560dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_receipttitle"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:text="제목"
+                android:textSize="10sp" />
+
+            <EditText
+                android:id="@+id/tv_receipttitle2"
+                android:layout_width="254dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:hint="제목"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bt_receiptadd"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="680dp"
+            android:textSize="10sp"
+            android:text="완료" />
+    </RelativeLayout>
+
+</FrameLayout>

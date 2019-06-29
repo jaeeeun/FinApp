@@ -110,12 +110,12 @@ public class MenuActivity extends AppCompatActivity
             fragment2 = new FinanceManagementFragment();
             transaction.replace(R.id.container, fragment2);
             transaction.commit();
-        } /* else if(id==R.id.nav_slideshow){
+        }  else if(id==R.id.nav_slideshow){
             Fragment fragment3;
-            fragment3 = new ReceiptAdd1Fragment();
+            fragment3 = new ReceiptAddFragment1();
             transaction.replace(R.id.container, fragment3);
             transaction.commit();
-        } */
+        }
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
