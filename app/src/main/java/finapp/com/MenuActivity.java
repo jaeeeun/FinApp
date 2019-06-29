@@ -21,17 +21,17 @@ import com.google.android.material.snackbar.Snackbar;
 public class MenuActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
-  @Override
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-     // toolbar.setNavigationIcon(R.drawable.ic_back);
-      getSupportActionBar().setTitle("프로젝트");
+        // toolbar.setNavigationIcon(R.drawable.ic_back);
+        getSupportActionBar().setTitle("프로젝트");
 
-      Fragment ProjecFragment = new ProjectFragment();
+        Fragment ProjecFragment = new ProjectFragment();
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
         transaction.add(R.id.container, ProjecFragment);
         transaction.addToBackStack(null);
@@ -85,6 +85,10 @@ public class MenuActivity extends AppCompatActivity
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
+
+            //화면전환
+            //서랍닫기
+
             return true;
         }
 
@@ -104,6 +108,8 @@ public class MenuActivity extends AppCompatActivity
             fragment1=new NotifiFragment();
             transaction.replace(R.id.container,fragment1);
             transaction.commit();
+
+
             // Handle the camera action
         } else if (id == R.id.nav_gallery) {
             Fragment fragment2;

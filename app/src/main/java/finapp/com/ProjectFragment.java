@@ -51,7 +51,7 @@ public class ProjectFragment extends Fragment {
     String income;
     TextView tv_projectname, tv_projectday,tv_income;
 
-    String[] spinneritems = {"전체","모션그래픽","웨딩영상"};
+    String[] spinneritems = {"전체","모션그래픽","브랜드 컨셉"};
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -130,7 +130,7 @@ public class ProjectFragment extends Fragment {
         CalendarView calendarView = (CalendarView) view.findViewById(R.id.calendarView);
 
         // 데이터 읽어와서 아이콘 생성
-        myRef.child("project1").addListenerForSingleValueEvent(new ValueEventListener() {
+        myRef.child("project1").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 for (DataSnapshot fileSnapshot : dataSnapshot.getChildren()) {
@@ -140,10 +140,6 @@ public class ProjectFragment extends Fragment {
                     endmonth = fileSnapshot.child("endmonth").getValue(Integer.class);
                     startday = fileSnapshot.child("startday").getValue(Integer.class);
                     endday = fileSnapshot.child("endday").getValue(Integer.class);
-                    day1 = fileSnapshot.child("day1").getValue(Integer.class);
-                    day2 = fileSnapshot.child("day2").getValue(Integer.class);
-                    day3 = fileSnapshot.child("day3").getValue(Integer.class);
-
 
                     Log.i("TAG: value is ", projectname);
                     //Toast.makeText(getContext(), projectname, Toast.LENGTH_SHORT).show();
@@ -152,6 +148,8 @@ public class ProjectFragment extends Fragment {
                     Calendar calendar2 = Calendar.getInstance();
                     Calendar calendar3 = Calendar.getInstance();
                     Calendar calendar4 = Calendar.getInstance();
+                    Calendar calendar5 = Calendar.getInstance();
+                    Calendar calendar6 = Calendar.getInstance();
                     calendar1.set(2019, 5, 30);
                     calendar2.set(2019, 5, 30);
                     calendar3.set(2019, 5, 30);
@@ -170,10 +168,12 @@ public class ProjectFragment extends Fragment {
                         events.add(new EventDay(calendar4, R.drawable.event_red_deadline));
                     } else if (number==3)
                     {
-
+                        calendar5.add(Calendar.DAY_OF_MONTH, startday-30);
+                        events.add(new EventDay(calendar3, R.drawable.event_blue_money));
+                        calendar6.add(Calendar.DAY_OF_MONTH, endday-30);
+                        events.add(new EventDay(calendar4, R.drawable.event_red_pt));
                     }
                     calendarView.setEvents(events);
-                    calendarView.setDisabledDays(getDisabledDays());
 
                 }
             }
@@ -234,22 +234,7 @@ public class ProjectFragment extends Fragment {
         return view;
     }
 
-    private List<Calendar> getDisabledDays() {
-        Calendar firstDisabled = DateUtils.getCalendar();
-        firstDisabled.add(Calendar.DAY_OF_MONTH, 2);
 
-        Calendar secondDisabled = DateUtils.getCalendar();
-        secondDisabled.add(Calendar.DAY_OF_MONTH, 1);
-
-        Calendar thirdDisabled = DateUtils.getCalendar();
-        thirdDisabled.add(Calendar.DAY_OF_MONTH, 18);
-
-        List<Calendar> calendars = new ArrayList<>();
-        calendars.add(firstDisabled);
-        calendars.add(secondDisabled);
-        calendars.add(thirdDisabled);
-        return calendars;
-    }
 
     private Calendar getRandomCalendar() {
         Random random = new Random();
