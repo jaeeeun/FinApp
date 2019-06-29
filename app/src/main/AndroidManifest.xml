@@ -16,8 +16,12 @@
     <activity android:name=".MainActivity"/>
     <activity android:name=".RegisterActivity"/>
     <activity android:name=".LoginActivity"
+<<<<<<< HEAD
         android:theme="@style/NoActionBar"
        android:windowSoftInputMode="stateAlwaysVisible">
+=======
+        android:windowSoftInputMode="stateAlwaysVisible">
+>>>>>>> uiFix
     <intent-filter>
     <action android:name="android.intent.action.MAIN"/>
     <action android:name="android.intent.action.VIEW"/>
