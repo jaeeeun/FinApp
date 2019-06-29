@@ -35,12 +35,7 @@ public class LoginActivity extends AppCompatActivity {
         mAuth = FirebaseAuth.getInstance();
 
 
-<<<<<<< HEAD
         loginPassword.setOnKeyListener(new View.OnKeyListener() {
-=======
-
-        btn_signUp.setOnClickListener(new View.OnClickListener() {
->>>>>>> uiFix
             @Override
             public boolean onKey(View view, int i, KeyEvent keyEvent) {
 
