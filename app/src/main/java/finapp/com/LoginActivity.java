@@ -72,8 +72,6 @@ public class LoginActivity extends AppCompatActivity {
                             @Override
                             public void onComplete(@NonNull Task<AuthResult> task) {
                                 if (task.isSuccessful()) {
-                                    //클라이언트면 ->클라이언트 화면으로
-                                    //프리랜서면 -> 프리랜서 화면으로
                                     startActivity(new Intent(LoginActivity.this, MenuActivity.class));
                                     finish();
                                 } else {
