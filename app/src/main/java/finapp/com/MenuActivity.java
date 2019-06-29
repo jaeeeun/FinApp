@@ -58,9 +58,6 @@ public class MenuActivity extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
 
 
-      //ImageButton imageButton=(ImageButton)findViewById(R.id.imageButton);
-      //TextView textView=(TextView)findViewById(R.id.textView);
-      //textView.setText("계좌번호");
 
     }
 
@@ -109,15 +106,12 @@ public class MenuActivity extends AppCompatActivity
             transaction.commit();
             // Handle the camera action
         } else if (id == R.id.nav_gallery) {
-
-        } /*else if (id == R.id.imageButton) {
             Toast.makeText(getApplicationContext(), "Asdfasdf", Toast.LENGTH_SHORT).show();
             Fragment fragment1;
-            fragment1=new NotifiFragment();
+            fragment1=new ProjectFragment();
             transaction.replace(R.id.container,fragment1);
             transaction.commit();
-        }*/
-
+        }
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
