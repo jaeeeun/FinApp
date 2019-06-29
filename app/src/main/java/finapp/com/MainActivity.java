@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -30,6 +31,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Button button=findViewById(R.id.button);
+        TextView textView=findViewById(R.id.textView);
+        textView.setText("308302-04048106");
 
       //  foodlistjsonParser(jsonstring);
 
