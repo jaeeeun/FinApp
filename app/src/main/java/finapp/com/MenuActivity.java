@@ -122,12 +122,16 @@ public class MenuActivity extends AppCompatActivity
         if (id == R.id.nav_home) {
             Toast.makeText(getApplicationContext(), "Asdfasdf", Toast.LENGTH_SHORT).show();
             Fragment fragment1;
-            fragment1=new CreditReportFragment();
+            fragment1=new ProjectFragment();
             transaction.replace(R.id.container,fragment1);
             transaction.commit();
             // Handle the camera action
         } else if (id == R.id.nav_gallery) {
-
+            Toast.makeText(getApplicationContext(), "Asdfasdf", Toast.LENGTH_SHORT).show();
+            Fragment fragment1;
+            fragment1=new ProjectFragment();
+            transaction.replace(R.id.container,fragment1);
+            transaction.commit();
         }
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
