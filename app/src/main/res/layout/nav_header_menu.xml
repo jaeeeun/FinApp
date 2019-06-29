@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="404dp"
-    xmlns:tools="http://schemas.android.com/tools"
     android:background="@color/white"
     android:gravity="bottom"
     android:orientation="vertical"
@@ -30,27 +30,44 @@
         android:textFontWeight="600"
         android:textSize="19.7sp"
         tools:text="김국민" />
+
     <View
         android:layout_width="fill_parent"
         android:layout_height="25dp"
         android:background="@color/white" />
 
-    <View
-        android:layout_width="fill_parent"
-        android:layout_height="2px"
-        android:background="@color/dark_grey" />
+    <TextView
+        style="@style/CaptionSelectedOnSecondaryMediumEmphasisLeft"
+        android:layout_marginTop="24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="KB Start 통장 저축예금" />
 
+    <TextView
+        android:layout_marginTop="5dp"
+        style="@style/Subtitle1PrimaryLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="112202-01-012132" />
 
+    <TextView
+        android:layout_marginTop="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:letterSpacing="0.03"
+        android:lineSpacingExtra="4.2sp"
+        android:textColor="#99000000"
+        android:textSize="11.8sp"
+        tools:text="잔액" />
 
-    <View
-        android:layout_width="336dp"
-        android:layout_height="114dp"
-        android:layout_weight="1"
-         />
-
-
+    <TextView
+        style="@style/H6SelectedOnSurfaceHighEmphasisLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="2,430,028원 " />
 
     <ImageView
+        android:layout_marginTop="44dp"
         android:layout_width="286dp"
         android:layout_height="64dp"
         android:src="@drawable/add_bank" />
