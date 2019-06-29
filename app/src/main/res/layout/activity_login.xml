@@ -5,6 +5,8 @@
     android:background="#F2F2F2"
     android:orientation="vertical">
 
+
+
     <ImageView
         android:layout_width="145dp"
         android:layout_height="90dp"
@@ -35,13 +37,14 @@
         android:layout_marginTop="9dp"
         android:background="#E1E1E1"
         android:hint="비밀번호 입력"
+        android:password="true"
         android:paddingStart="17dp"
         android:paddingTop="10dp"
         android:paddingBottom="10dp"
         android:textSize="15.8sp" />
 
     <LinearLayout
-        android:layout_width="253dp"
+        android:layout_width="254dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="10dp"

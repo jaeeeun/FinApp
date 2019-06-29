@@ -89,7 +89,6 @@ public class ProjectFragment extends Fragment {
                         //전체
                         projectnumber = 0;
                         //#여기고쳐야되외외오이외외욍
-                        //Toast.makeText(getActivity(), "A0", Toast.LENGTH_LONG).show();
                         break;
                     case 1:
                         projectnumber = 1;
@@ -99,7 +98,6 @@ public class ProjectFragment extends Fragment {
 
                         fragment1=new Project1Fragment();
                         transaction.replace(R.id.calendarContainer,fragment1);
-                        //Toast.makeText(getActivity(), "1", Toast.LENGTH_LONG).show();
                         transaction.commit();
                         break;
                     case 2:
@@ -111,20 +109,13 @@ public class ProjectFragment extends Fragment {
                         fragment1=new Project2Fragment();
                         transaction.replace(R.id.calendarContainer,fragment1);
                         transaction.commit();
-                        //Toast.makeText(getActivity(), "2", Toast.LENGTH_LONG).show();
                         break;
                     case 3:
                         projectnumber = 3;
-                        //Toast.makeText(getActivity(), "3", Toast.LENGTH_LONG).show();
                         break;
-
                     default:
                         break;
                 }
-               // Toast.makeText(getActivity(), "Asdf", Toast.LENGTH_LONG).show();
-
-               // transaction.commit();
-
             }
 
             @Override
