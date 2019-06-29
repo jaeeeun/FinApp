@@ -60,7 +60,6 @@
             android:background="#00E4E4E4"
             android:hapticFeedbackEnabled="false"
             android:text="@string/signup"
-            android:textAlignment="viewStart"
             android:textAppearance="@style/CaptionPrimaryLeft"
             android:textColor="#288AF3" />
 

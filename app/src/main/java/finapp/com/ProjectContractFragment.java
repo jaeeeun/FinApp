@@ -62,6 +62,7 @@ public class ProjectContractFragment extends Fragment {
                 user.put("day1", 4);
                 user.put("day2", 12);
                 user.put("day3", 16);
+                user.put("number", 3);
                 user.put("income", "80,000,000");
                 myRef.child("project1").push().setValue(user);
 
