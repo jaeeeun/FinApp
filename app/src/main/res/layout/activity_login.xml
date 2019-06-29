@@ -1,0 +1,83 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+>
+
+    <ImageView
+        android:layout_gravity="center"
+        android:layout_marginTop="86dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"/>
+
+
+    <EditText
+        android:layout_marginTop="31dp"
+        android:hint="이메일 입력"
+        android:background="@color/white_two"
+        android:id="@+id/loginEmail"
+        android:paddingTop="10dp"
+        android:paddingStart="17dp"
+        android:paddingBottom="10dp"
+        android:layout_width="254dp"
+        android:layout_height="53dp"
+        android:layout_gravity="center"/>
+
+
+    <EditText
+        android:hint="비밀번호 입력"
+        android:layout_marginTop="9dp"
+        android:id="@+id/loginPassword"
+        android:background="@color/white_two"
+        android:paddingTop="10dp"
+        android:paddingStart="17dp"
+        android:paddingBottom="10dp"
+        android:layout_width="254dp"
+        android:layout_height="53dp"
+        android:layout_gravity="center"
+/>
+
+    <LinearLayout
+        android:layout_width="254dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_signUp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:background="@color/white"
+            android:text="@string/signup" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="@string/client" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:layout_marginTop="52dp"
+>
+
+        <Button
+            android:id="@+id/btn_signIn"
+            android:text="@string/signin"
+            android:layout_width="0dp"
+            android:textColor="@color/white"
+            android:layout_height="match_parent"
+            android:background="@color/blue_violet"
+            android:layout_weight="1"
+ />
+
+    </LinearLayout>
+
+</LinearLayout>
