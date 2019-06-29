@@ -11,9 +11,13 @@
 
     <ListView
         android:id="@+id/notifi_list"
-        android:stackFromBottom="true"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"></ListView>
+        android:layout_height="wrap_content"
+        android:stackFromBottom="true"
+
+        android:visibility="visible">
+
+    </ListView>
 
     <Button
         android:id="@+id/notifi_clintbtn"

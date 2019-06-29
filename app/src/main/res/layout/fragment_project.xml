@@ -152,7 +152,8 @@
                     android:id="@+id/spinner"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:backgroundTint="@color/dark_sky_blue">
+                    android:backgroundTint="@color/dark_sky_blue"
+                    android:fadeScrollbars="false">
 
                 </Spinner>
             </LinearLayout>
