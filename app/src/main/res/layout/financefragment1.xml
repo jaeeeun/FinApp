@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:id="@+id/frame1"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:textColor="#de000000"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="수입 분석"
+            android:textSize="26sp"
+            />
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:textColor="#99000000"
+            android:text="이번달 수입"
+            android:textSize="16sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="2,230,080원"
+                android:textColor="#de000000"
+            android:textSize="26sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="예정"
+                android:layout_marginLeft="8dp"
+                android:textSize="8sp" />
+
+    </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#99000000"
+            android:text="오늘까지 1,505,430 원을 벌었습니다. 이번달 프로젝트 완료시 예정된 금액은 724,650 원입니다. 조그만 더 힘내세요!"
+            android:layout_marginLeft="30dp"
+            android:textSize="12sp"
+            android:layout_marginRight="20dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="51dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/montly_income_graph" />
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="평균 수입"
+            android:textColor="#99000000"
+            android:textSize="16sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="1,723,340원"
+                android:textColor="#de000000"
+                android:textSize="26sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="이전 6개월 기준"
+                android:layout_marginLeft="8dp"
+                android:textSize="8sp" />
+
+        </LinearLayout>
+        <TextView
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6개월간 평균 수입은 1,723,340 원입니다. 가장 낮은 달은 7월로 236,300 원, 가장 높은 달은 9월로 3,201,050 원입니다."
+            android:layout_marginLeft="30dp"
+            android:textColor="#99000000"
+            android:textSize="12sp"
+            android:layout_marginRight="20dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="185dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/average_income_graph" />
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="내 워크라이프 사이클"
+            android:textColor="#de000000"
+            android:textSize="26sp"
+            />
+        <TextView
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="유동적인 수입을 분석해 장기적 플랜을 세워보세요.김국민님의 워크라이프 사이클 분석결과, 5월달의 수입이 가장 적고, 7월달 수입이 가장 많습니다."
+            android:layout_marginLeft="30dp"
+            android:textSize="12sp"
+            android:textColor="#99000000"
+            android:layout_marginRight="20dp"/>
+        <ImageView
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/worklife_cycle_graph"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+
+    </LinearLayout>
+</FrameLayout>

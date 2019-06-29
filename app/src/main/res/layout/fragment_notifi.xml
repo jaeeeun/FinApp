@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NotifiFragment"
+    android:background="@color/white"
+    android:id="@+id/notifi_container">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ListView
+        android:id="@+id/notifi_list"
+        android:stackFromBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ListView>
+
+    <Button
+        android:id="@+id/notifi_clintbtn"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:layout_gravity="bottom"
+        android:background="@color/blue_violet"
+        android:text="계약 요청"
+        android:textColor="@color/white_three"
+        android:textSize="19.7sp" />
+
+</FrameLayout>

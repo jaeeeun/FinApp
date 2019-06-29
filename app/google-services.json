@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "465152620143",
+    "firebase_url": "https://kb-kisa.firebaseio.com",
+    "project_id": "kb-kisa",
+    "storage_bucket": "kb-kisa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:465152620143:android:ec0176ff59c329fa",
+        "android_client_info": {
+          "package_name": "finapp.com"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "465152620143-andp7n81r1mc4fmlhh1atveahvppbmmr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "finapp.com",
+            "certificate_hash": "1c977702d94ad7913997a9b147776a53b058b051"
+          }
+        },
+        {
+          "client_id": "465152620143-v9f31kubpda5f9v7ad4gqpa8mrn76per.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-KwjtoMYGwraeWxOzds9VNIU_tTiyjaE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "465152620143-v9f31kubpda5f9v7ad4gqpa8mrn76per.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

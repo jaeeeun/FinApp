@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">FinApp</string>
+
+    <string name="id">아이디</string>
+    <string name="email">이메일</string>
+    <string name="password">비밀번호</string>
+
+    <string name="signin">로그인</string>
+    <string name="success_login">로그인 성공</string>
+    <string name="failed_login">로그인 실패</string>
+
+    <string name="signup">회원가입</string>
+    <string name="success_signup">회원가입 성공</string>
+    <string name="failed_signup">회원가입 실패</string>
+
+    <string name="button_message">전체</string>
+
+    <string name="button_message2">진행중</string>
+
+    <string name="button_message3">완료</string>
+
+    <string name="button_message4">현재 잔고</string>
+
+    <string name="button_message5">수익</string>
+
+    <string name="button_message6">다음 마감일</string>
+
+    <string name="button_message7">클라이언트 전송</string>
+
+    <string name="textview_message1">새 계약 요청</string>
+
+    <string name="edittext_message1">작업 설명</string>
+
+    <string name="edittext_message2">계약 기간</string>
+
+    <string name="edittext_message3">금액</string>
+
+    <string name="edittext_message4">요청사항</string>
+    <string name="client">클라이언트 버전
+    </string>
+
+    <string name="textview1">TextView</string>
+    <string name="title_activity_project">ProjectActivity</string>
+    <string name="title_activity_menu">MenuActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+
+    <string name="menu1">프로젝트</string>
+    <string name="menu2">금융 관리</string>
+    <string name="menu3">경빙증비 도우미</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_temp">TempActivity</string>
+
+</resources>

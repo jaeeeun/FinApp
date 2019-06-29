@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="city">
+        <item >서비스 이용으로 신용정보가 떨어질 수도 있나요?\n A. 본 서비스는 신용점수를 떨어뜨리지 않습니다.</item>
+        <item >얼마나 자주</item>
+        <item >부천</item>
+        <item >수원</item>
+        <item >파주</item>
+        <item >부산</item>
+        <item >대전</item>
+    </string-array>
+</resources>
+
