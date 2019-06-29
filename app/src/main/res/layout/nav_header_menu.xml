@@ -13,38 +13,48 @@
     android:theme="@style/Widget.Design.CollapsingToolbar">
 
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1" />
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
         android:contentDescription="@string/nav_header_desc"
-        android:paddingTop="@dimen/nav_header_vertical_spacing"
-        android:src="@drawable/initimag" />
+        android:paddingTop="6dp"
+        android:src="@drawable/profile_freelancer" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="19.7sp"
-        android:textColor="#de000000"
         android:letterSpacing="0.01"
-        tools:text="김 아무개"
-        />
+        android:paddingTop="21dp"
+        android:textColor="#de000000"
+        android:textFontWeight="600"
+        android:textSize="19.7sp"
+        tools:text="김국민" />
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="25dp"
+        android:background="@color/white" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/nav_header_subtitle" />
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/dark_grey" />
+
+
+
+    <View
+        android:layout_width="336dp"
+        android:layout_height="114dp"
+        android:layout_weight="1"
+        android:marginTop="21dp" />
+
     <View
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_weight="1" />
+
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/banner"/>
+        android:layout_width="286dp"
+        android:layout_height="64dp"
+        android:src="@drawable/add_bank" />
 </LinearLayout>
