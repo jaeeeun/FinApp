@@ -1,6 +1,7 @@
 package finapp.com;
 
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -39,10 +40,6 @@ public class MenuActivity extends AppCompatActivity
         transaction.addToBackStack(null);
         transaction.commit();
 
-
-
-
-
         //플로팅 버튼
         FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -76,6 +73,9 @@ public class MenuActivity extends AppCompatActivity
               transaction.add(R.id.container, fragment1);
               transaction.addToBackStack(null);
               transaction.commit();
+
+              DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout) ;
+              drawer.closeDrawer(Gravity.LEFT) ;
           }
       });
 

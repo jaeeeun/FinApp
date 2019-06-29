@@ -1,9 +1,6 @@
 package finapp.com;
 
 
-import android.app.ActionBar;
-import android.graphics.Color;
-import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -38,9 +35,11 @@ public class ProjectContractFragment extends Fragment {
         View v = inflater.inflate(R.layout.fragment_project_contract, container, false);
         ;
 
+        /*
         ActionBar actionbar = ((MainActivity) getActivity()).getActionBar();
         actionbar.setBackgroundDrawable(new ColorDrawable(Color.argb(0,0,0,0)));
         actionbar.setTitle("고용 계약서");
+        */
 
         project_contract_button = v.findViewById(R.id.project_contract_button);
 
@@ -49,12 +48,12 @@ public class ProjectContractFragment extends Fragment {
             public void onClick(View view) {
                 Toast.makeText(getActivity(), "프로젝트가 생성 되었습니다", Toast.LENGTH_SHORT).show();
 
-                //데이터베이스에 추가
+                // 데이터베이스에 추가
                 // 파이어베이스 인증 객체 선언
 
                 HashMap user;
                 user = new HashMap<>();
-                user.put("projectname", "브랜드컨셉");
+                user.put("projectname", "웨딩영상");
                 user.put("startmonth", 6);
                 user.put("startday", 1);
                 user.put("endmonth", 6);

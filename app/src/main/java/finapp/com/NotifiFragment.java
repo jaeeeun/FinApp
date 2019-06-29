@@ -80,6 +80,23 @@ public class NotifiFragment extends Fragment {
                 transaction.replace(R.id.container,fragment1);
                 transaction.commit();
 
+                int count, checked ;
+                count = adapter.getCount() ;
+
+                if (count > 0) {
+                    // 현재 선택된 아이템의 position 획득.
+                    checked = notifi_list.getCheckedItemPosition();
+
+                    if (checked > -1 && checked < count) {
+                        notifi_list.removeViewAt(i);
+                        // listview 선택 초기화.
+                        notifi_list.clearChoices();
+
+                        // listview 갱신.
+                        adapter.notifyDataSetChanged();
+                    }
+                }
+
             }
         });
         notifi_clientbtn.setOnClickListener(new View.OnClickListener() {
