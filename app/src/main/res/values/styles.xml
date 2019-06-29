@@ -1,11 +1,16 @@
-<resources>
 
+<resources>
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:fontFamily">"@font/apple_sd_gothic_neo"</item>
+        <item name="fontFamily">"@font/apple_sd_gothic_neo"</item> <!-- target android sdk versions < 26 and > 14 if theme other than AppCompat -->
+
+
     </style>
 
     <style name="AppTheme.NoActionBar">

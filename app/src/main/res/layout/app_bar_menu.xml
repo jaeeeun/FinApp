@@ -16,10 +16,9 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:background="@color/light_grey"
+            android:background="@color/white"
             app:popupTheme="@style/PopupOverlay"
-            app:titleTextColor="#de000000"
-            />
+            app:titleTextColor="#de000000" />
 
     </com.google.android.material.appbar.AppBarLayout>
 
@@ -31,6 +30,8 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
         android:layout_margin="@dimen/fab_margin"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
+        android:backgroundTint="@color/deep_sky_blue"
+        app:rippleColor="#FFFFFF"
+        app:srcCompat="@drawable/add_white" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

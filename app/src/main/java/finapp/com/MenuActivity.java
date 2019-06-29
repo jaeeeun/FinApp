@@ -1,12 +1,9 @@
 package finapp.com;
 
 import android.os.Bundle;
-import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.ImageButton;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.ActionBarDrawerToggle;
@@ -24,21 +21,22 @@ import com.google.android.material.snackbar.Snackbar;
 public class MenuActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
-  @Override
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-     // toolbar.setNavigationIcon(R.drawable.ic_back);
-      getSupportActionBar().setTitle("프로젝트");
+        // toolbar.setNavigationIcon(R.drawable.ic_back);
+        getSupportActionBar().setTitle("프로젝트");
 
-      Fragment ProjecFragment = new ProjectFragment();
+        Fragment ProjecFragment = new ProjectFragment();
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
         transaction.add(R.id.container, ProjecFragment);
         transaction.addToBackStack(null);
         transaction.commit();
+
 
         //플로팅 버튼
         FloatingActionButton fab = findViewById(R.id.fab);
@@ -59,25 +57,6 @@ public class MenuActivity extends AppCompatActivity
         toggle.syncState();
         navigationView.setNavigationItemSelectedListener(this);
 
-      View headView = navigationView.getHeaderView(0);
-      TextView textView=headView.findViewById(R.id.textView);
-      textView.setText("308302-04048106");
-      ImageButton setting_button=headView.findViewById(R.id.btn_setting);
-      ImageButton notify_button=headView.findViewById(R.id.btn_notify);
-
-      notify_button.setOnClickListener(new View.OnClickListener() {
-          @Override
-          public void onClick(View view) {
-              Fragment fragment1 = new NotifiFragment();
-              FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-              transaction.add(R.id.container, fragment1);
-              transaction.addToBackStack(null);
-              transaction.commit();
-
-              DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout) ;
-              drawer.closeDrawer(Gravity.LEFT) ;
-          }
-      });
 
 
     }
@@ -106,6 +85,10 @@ public class MenuActivity extends AppCompatActivity
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
+
+            //화면전환
+            //서랍닫기
+
             return true;
         }
 
@@ -122,18 +105,23 @@ public class MenuActivity extends AppCompatActivity
         if (id == R.id.nav_home) {
             Toast.makeText(getApplicationContext(), "Asdfasdf", Toast.LENGTH_SHORT).show();
             Fragment fragment1;
-            fragment1=new ProjectFragment();
+            fragment1=new NotifiFragment();
             transaction.replace(R.id.container,fragment1);
             transaction.commit();
+
+
             // Handle the camera action
         } else if (id == R.id.nav_gallery) {
-            Toast.makeText(getApplicationContext(), "Asdfasdf", Toast.LENGTH_SHORT).show();
-            Fragment fragment1;
-            fragment1=new ProjectFragment();
-            transaction.replace(R.id.container,fragment1);
+            Fragment fragment2;
+            fragment2 = new FinanceManagementFragment();
+            transaction.replace(R.id.container, fragment2);
             transaction.commit();
-        }
-
+        } /* else if(id==R.id.nav_slideshow){
+            Fragment fragment3;
+            fragment3 = new ReceiptAdd1Fragment();
+            transaction.replace(R.id.container, fragment3);
+            transaction.commit();
+        } */
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
