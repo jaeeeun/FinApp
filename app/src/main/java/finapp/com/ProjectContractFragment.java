@@ -1,6 +1,9 @@
 package finapp.com;
 
 
+import android.app.ActionBar;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -28,12 +31,18 @@ public class ProjectContractFragment extends Fragment {
 
     Button project_contract_button;
 
+
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View v = inflater.inflate(R.layout.fragment_project_contract, container, false);
         ;
+
+        ActionBar actionbar = ((MainActivity) getActivity()).getActionBar();
+        actionbar.setBackgroundDrawable(new ColorDrawable(Color.argb(0,0,0,0)));
+        actionbar.setTitle("고용 계약서");
 
         project_contract_button = v.findViewById(R.id.project_contract_button);
 

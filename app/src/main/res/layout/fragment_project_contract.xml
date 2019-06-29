@@ -10,24 +10,24 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:letterSpacing="0.01"
-        android:lineSpacingExtra="8.2sp"
-        android:textColor="#99000000"
-        android:textSize="15.8sp"
-        tools:text="영상물 지급 계약" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/contract_0"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/contract_1"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/contract_2"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/contract_3"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:letterSpacing="0.02"
-        android:lineSpacingExtra="6.2sp"
-        android:textColor="#de000000"
-        android:textSize="13.8sp"
-        tools:text="          와             은 계약건명에 명시된 업무작업을 수행하기 위해 다음과 같이 계약을 체결한다."
-/>
+
     </LinearLayout>
     <!-- TODO: Update blank fragment layout -->
 
