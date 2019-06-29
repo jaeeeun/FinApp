@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.ActionBarDrawerToggle;
@@ -38,6 +39,9 @@ public class MenuActivity extends AppCompatActivity
         transaction.commit();
 
 
+
+
+
         //플로팅 버튼
         FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -57,6 +61,9 @@ public class MenuActivity extends AppCompatActivity
         toggle.syncState();
         navigationView.setNavigationItemSelectedListener(this);
 
+      View headView = navigationView.getHeaderView(0);
+      TextView textView=headView.findViewById(R.id.textView);
+      textView.setText("308302-04048106");
 
       //ImageButton imageButton=(ImageButton)findViewById(R.id.imageButton);
       //TextView textView=(TextView)findViewById(R.id.textView);
